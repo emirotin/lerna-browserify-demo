@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "lerna": "2.0.0-beta.30"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "bundle": "browserify packages/main/index.js -o build/bundle.js",
+    "build": "npm run bootstrap && npm run bundle"
+  }
+}
